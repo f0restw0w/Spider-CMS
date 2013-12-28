@@ -1,11 +1,9 @@
 <?php
 
 /**
- * AppCMS Copyright (c) 2012-2013  
- * AppCMS is a free open source mobile phone APP application download website content management system.
- * Custom development, production BUG report template, please contact loyjers@qq.com
- * Author: crane
- * Editor: crane,loyjers
+ * 
+ * Author: f0rest
+ * Editor: f0rest
  */
 
 require_once(dirname(__FILE__) . "/../core/init.php");

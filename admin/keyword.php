@@ -1,10 +1,8 @@
 <?php
 /**
- * AppCMS: (C)2013  
- * AppCMS is a free open source mobile phone APP application download website content management system.
- * Custom development, production BUG report template, please contact loyjers@qq.com
- * Author: huliangliang
- * Editor: huliangliang
+ * 
+ * Author: f0rest
+ * Editor: f0rest
  */
 
 /**
