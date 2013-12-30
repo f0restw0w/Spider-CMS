@@ -15,7 +15,7 @@ define('DB_HOST', '127.0.0.1');
 // 数据库用户名
 define('DB_USERNAME', 'root');
 //数据库密码
-define('DB_PASS', '123456');
+define('DB_PASS', 'freestyle');
 //数据库
 define('DB_DBNAME', 'appcms');
 //数据库编码
