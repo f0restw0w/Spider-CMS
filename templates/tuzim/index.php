@@ -24,7 +24,7 @@
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#index_top_left").nbspSlider({widths:'800px',heights:'200px',numBtnSty:"num",numBtnShow:1,speeds:500,delays:4000,preNexBtnShow:0});
+        $("#index_top_left").nbspSlider({widths:'750px',heights:'200px',numBtnSty:"num",numBtnShow:1,speeds:500,delays:4000,preNexBtnShow:0});
     });
 </script> <?php require_once ('inc_head.php')?>
 <p class="line-t-10"></p>
@@ -45,12 +45,12 @@
 	<li>
 	<dl>
 		<dt class="play-img"><a href="<?php echo $v['surl']?>"><img
-			src="<?php echo $v['app_logo']; ?>" width="250" height="320" border="0"
-			alt="<?php echo $v['app_title']; ?>"></a></dt>
-		<dd class="play-name"><a href="<?php echo $v['surl']?>"><?php echo $v['app_title']; ?></a></dd>
-		<dd class="play-type"><?php echo $v['cate']['cname']; ?></dd>
+			src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+			border="0" alt="<?php echo $v['app_title']; ?>"></a></dt>
+		<dd class="play-name"></dd>
+		<dd class="play-type"><!-- <?php echo $v['cate']['cname']; ?> --></dd>
 		<dd class="play-download" style="display: none;"><a
-			href="<?php echo $v['surl']?>">下载</a></dd>
+			href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font color="#005AB5">15468</font></a></dd>
 	</dl>
 	</li>
 	<?php } }?>

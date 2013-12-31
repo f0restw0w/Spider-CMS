@@ -1,4 +1,4 @@
-/* 鍒濆鍖朿ss */
+/* 初始化css */
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select
 	{
 	margin: 0;
@@ -6,7 +6,7 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
 }
 
 body {
-	font: 12px 'Microsoft YaHei', Arial, '瀹嬩綋', Helvetica, sans-serif,
+	font: 12px 'Microsoft YaHei', Arial, '宋体', Helvetica, sans-serif,
 		'Arial Narrow', HELVETICA;
 	background: #fff;
 	-webkit-text-size-adjust: 100%;
@@ -50,7 +50,7 @@ b {
 	font-weight: normal;
 }
 
-/* 澶у尯鍩�姒傛嫭鏍峰紡 */
+/* 大区域 概括样式 */
 body {
 	background: url(images/bg-face.jpg) repeat;
 }
@@ -58,7 +58,7 @@ body {
 .warp {
 	padding: 0; //
 	width: 950px;
-	width: 1100px;
+	width: 1050px;
 	height: auto;
 	overflow: hidden;
 	zoom: 1;
@@ -214,13 +214,13 @@ body {
 }
 
 .nav-opacity {
-	filter: Alpha(opacity =   95);
+	filter: Alpha(opacity =       95);
 	opacity: 0.95;
 	background: #0078bb;
 }
 
 .nav-opacity-none {
-	filter: Alpha(opacity =   100);
+	filter: Alpha(opacity =       100);
 	opacity: 1;
 	background: transparent;
 }
@@ -454,7 +454,7 @@ ul.level li.l5 {
 .top-head .head-seach {
 	width: 340px;
 	height: 70px;
-	margin: 30px 35px 0 0;
+	margin: 30px 84px 0 0;
 }
 
 .top-head .head-seach .bdr-span {
@@ -552,14 +552,15 @@ ul.level li.l5 {
 	line-height: 30px;
 }
 
-/* 椤堕儴 缁撴潫 */ /* 涓讳綋鍐呭 */ /* 涓讳綋鍐呭 宸︿晶 */
+/*精彩推荐*/
 .warp-content .body-left {
-	width: 815px;
+	margin-left:5px;
+	width: 750px;
 }
 
 .warp-content .body-right {
 	width: 232px;
-	margin: 0 40px 0 0;
+	margin: 0 98px 0 0;
 }
 
 .body-left .body-top-poster {
@@ -610,6 +611,7 @@ ul.level li.l5 {
 	display: block;
 	color: #2C9EE2;
 	line-height: 30px;
+	background: #F0F0F0;
 }
 
 .body-left .body-cent-boutique span.title em {
@@ -635,63 +637,70 @@ ul.level li.l5 {
 	padding-top: 10px;
 	display: block;
 	/*height: 498px;*/
-	height:auto;
+	height: auto;
 }
 
+/*主页主题列表个体样式*/
 .body-cent-boutique ul.bout-content li {
 	display: inline-block;
 	float: left;
-	width: 250px;
-	height: 320px;
-	margin: 0 1px 10px 14px;
-	_margin: 0 5px 10px 14px;
-	_margin-left: 8px;
-	border: 1px solid #f0f0f0;
-	border-radius: 10px;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
 }
 
 .body-cent-boutique ul.bout-content li.li-hover {
-	/*background: url(img/index/css-img.png) -265px -451px no-repeat;*/
+	/*background: #D2E9FF;
+	background: url(img/index/css-img.png) -265px -451px no-repeat;
 	border: 1px solid #fff;;
-}
+*/}
 
 .body-cent-boutique ul.bout-content li dl dt {
 	width: 72px;
 	height: 72px;
-	/*margin: 3px px 3px 2px;*/
+	margin: 3px 0px 3px 3px;
 }
 
+/*主题介绍样式*/
 .body-cent-boutique ul.bout-content li dl dd {
 	height: 28px;
+	width: 240px;
 	line-height: 28px;
 	text-align: center;
+	margin: 90px 50px;
 }
 
 .body-cent-boutique ul.bout-content li dl dd.play-name a {
 	font-weight: bold;
 	word-spacing: 1px;
 	letter-spacing: 1px;
-	width: 110px;
 	overflow: hidden;
 	white-space: nowrap;
+	background: #FFFFFF;
 	text-overflow: ellipsis;
 }
 
 .body-cent-boutique ul.bout-content li dl dd.play-download a,.open .info-and-download a.dwd
 	{
-	width: 64px;
-	line-height: 200%;
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
 	line-height: 28px;
 	font-size: 12px;
-	font-weight: bold;
-	background: url(img/index/css.gif) left -1317px;
-	color: #fff;
-	text-align: center;
 }
 
 .body-cent-boutique ul.bout-content li dl dd.play-download a:hover,.open .info-and-download a.dwd:hover
-	{
-	background: url(img/index/css.gif) left -1375px;
+	{ /*background: url(img/index/css.gif) left -1375px;*/
+	
 }
 
 .body-left .poster-slide {
@@ -882,7 +891,6 @@ ul.level li.l5 {
 }
 
 .body-right .center-warp {
-	height: 678px;
 }
 
 .center-warp .the-one {
