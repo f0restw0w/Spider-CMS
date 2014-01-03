@@ -559,7 +559,9 @@ ul.level li.l5 {
 }
 
 .warp-content .body-right {
+	height:1024px;
 	width: 232px;
+	background:RED;
 	margin: 0 98px 0 0;
 }
 
@@ -653,6 +655,19 @@ ul.level li.l5 {
 	border-radius: 8px;
 	display: inline-block;
 }
+/*主页主题列表个体样式 ----- 一周推荐*/
+.body-cent-boutique ul.bout-content-yizhou li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	/*margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	*/border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
 
 .body-cent-boutique ul.bout-content li.li-hover {
 	/*background: #D2E9FF;
@@ -674,8 +689,8 @@ ul.level li.l5 {
 	text-align: center;
 	margin: 90px 50px;
 }
-
-.body-cent-boutique ul.bout-content li dl dd.play-name a {
+/*主题介绍样式  ---- 一周推荐*/
+.body-cent-boutique ul.bout-content-yizhou li dl dd.play-name a {
 	font-weight: bold;
 	word-spacing: 1px;
 	letter-spacing: 1px;
@@ -684,13 +699,26 @@ ul.level li.l5 {
 	background: #FFFFFF;
 	text-overflow: ellipsis;
 }
-
+/*主题介绍样式 */
 .body-cent-boutique ul.bout-content li dl dd.play-download a,.open .info-and-download a.dwd
 	{
 	width: 200px;
 	margin:10px 200px 0px -38px;
 	background: #FCFCFC;
 	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*主题介绍样式  ---- 一周推荐*/
+.body-cent-boutique ul.bout-content-yizhou li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #RED;
 	text-align: left;
 	border-radius: 4px;
 	font-weight: bold;
@@ -899,7 +927,7 @@ ul.level li.l5 {
 
 .the-one .cont {
 	background: #fff;
-	height: 197px;
+	height: auto;
 }
 
 .the-one .open {

@@ -36,7 +36,7 @@
 </ul>
 </div>
 <p class="line-t-10"></p>
-<!--精彩推荐--> <?php $a = $c->get_recommend(array('area_id'=>2,'pagesize'=>20,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3  )'));//print_r($a['list'][0]);?>
+<!--精彩推荐--> <?php $a = $c->get_recommend(array('area_id'=>2,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3  )'));//print_r($a['list'][0]);?>
 <div class="body-cent-boutique bor-sty bg-fff">
 <p class="line-t-10"></p>
 <span class="title"><em><?php echo $a['title']; ?></em></span>
@@ -48,9 +48,10 @@
 			src="<?php echo $v['app_logo']; ?>" width="216" height="320"
 			border="0" alt="<?php echo $v['app_title']; ?>"></a></dt>
 		<dd class="play-name"></dd>
-		<dd class="play-type"><!-- <?php echo $v['cate']['cname']; ?> --></dd>
+		<dd class="play-type"></dd>
 		<dd class="play-download" style="display: none;"><a
-			href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font color="#005AB5">15468</font></a></dd>
+			href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+			color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a></dd>
 	</dl>
 	</li>
 	<?php } }?>
@@ -58,139 +59,39 @@
 </div>
 </div>
 <!-- 左侧主体内容  结束 -->
+
+
 <div class="r body-right"><!-- 右侧主体内容 --> <!--每日推荐-->
 <div class="center-warp">
-
 <div class="the-one">
 <div class="bor-sty cont">
 <p class="line-t-6"></p>
-	<?php
-	$a = $c->get_recommend(array('area_id'=>1,'count'=>0,'pagesize'=>1,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3 )'));
-	foreach($a['list'] as $k=>$v){
-		?> <span class="title">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $a['title']; ?></span>
-<p class=" open"><em class="l"> <a href="<?php echo $v['surl']; ?>"
-	class="rank-img"><img src="<?php echo $v['app_logo']; ?>" border="0"
-	alt="<?php echo $v['app_title']; ?>"></a> </em> <span
-	class="r info-and-download"> <a href="<?php echo $v['surl']; ?>"
-	class="txt-overflw description"><?php echo $v['app_title'];?> </a><br />
-类型：<?php echo $c->categories[$v['last_cate_id']]['cname'];?><br />
-<a href="<?php echo $v['surl']?>" class="dwd">下载</a> </span></p>
-<p class="col-94 details"><a href="<?php $v['surl']; ?>"><?php echo helper::utf8_substr($a['list'][0]['app_desc'],0,50); ?></a></p>
-		<?php }?></div>
-</div>
-
-<p class="line-t-10"></p>
-<div style="height: 133px; overflow: hidden;"><?php $c->get_ad(17); ?></div>
-<p class="line-t-10"></p>
-<!--上升最快--> <?php $a = $c->get_recommend(array('area_id'=>6,'pagesize'=>10,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3 )'));//print_r($a);?>
-<div class="bor-sty asce-order"><span class="rank-title"><?php echo $a['title']; ?></span>
-<div class="l ranking">
-<ul>
-<?php if(!empty($a['list'])){foreach($a['list'] as $k => $v ){?>
+	<?php $a = $c->get_recommend(array('area_id'=>2,'pagesize'=>6,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3  )'));//print_r($a['list'][0]);?>
+<div class="body-cent-boutique bor-sty bg-fff">
+<ul class="bout-content-yizhou">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
-	<p class="open" <?php if($k!=0) echo "style='display:none;'" ?>><em
-		class="l"> <span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>" class="rank-img"><img
-		src="<?php echo $v['app_logo'];?>" border="0"
-		alt="<?php echo $v['app_title'];?>"></a> </em> <span
-		class="r info-and-download"> <a href="<?php echo $v['surl'];?>"
-		class="txt-overflw description"><?php echo $v['app_title'];?></a> <a
-		href="<?php echo $v['surl']?>" class="dwd">下载</a> </span></p>
-	<p class="close" <?php if($k==0) echo "style='display:none;'" ?>><span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>"
-		class="col-6b txt-overflw description"><?php echo $v['app_title'];?></a>
-	<span class="col-94 download-num"><?php echo $v['app_down'];?>次</span>
-	</p>
-	</li>
-	<?php } } ?>
+	<dl>
+		<dt class="play-img"><a href="<?php echo $v['surl']?>"><img
+			src="<?php echo $v['app_logo']; ?>" width="230" height="320"
+			border="0" alt="<?php echo $v['app_title']; ?>"></a></dt>
+		<dd class="play-name"></dd>
+		<dd class="play-type"></dd>
+		<dd class="play-download" style="display: none;"><a
+			href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+			color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a></dd>
+	</dl>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+	<?php } }?>
 </ul>
 </div>
 </div>
 </div>
-
-
+</div>
 </div>
 <!-- 右侧主体内容  结束 -->
-<p class="line-t-10"></p>
-<div class="bor-sty choiceness"><!--游戏排行--> <?php $a = $c->get_recommend(array('area_id'=>3,'pagesize'=>10,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3 )'));//print_r($a);?>
-<div class="ranking" style="overflow: hidden;">
-<div class="l game-ranking"><span class="rank-title"><?php echo $a['title']; ?></span>
-<ul>
-<?php if(!empty($a['list'])){foreach($a['list'] as $k => $v ){?>
-	<li>
-	<p class="open" <?php if($k!=0) echo "style='display:none;'" ?>><em
-		class="l"> <span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>" class="rank-img"><img
-		src="<?php echo $v['app_logo'];?>" border="0"
-		alt="<?php echo $v['app_title'];?>"></a> </em> <span
-		class="r info-and-download"> <a href="<?php echo $v['surl'];?>"
-		class="txt-overflw description"><?php echo $v['app_title'];?></a> <a
-		href="<?php echo $v['surl']?>" class="dwd">下载</a> </span></p>
-	<p class="close" <?php if($k==0) echo "style='display:none;'" ?>><span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>"
-		class="col-6b txt-overflw description"><?php echo $v['app_title'];?></a>
-	<span class="col-94 download-num"><?php echo $v['app_down'];?>次</span>
-	</p>
-	</li>
-	<?php } } ?>
-</ul>
-</div>
-<!--应用排行--> <?php $a = $c->get_recommend(array('area_id'=>4,'pagesize'=>10,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3 )'));//print_r($a);?>
-<div class="l" style="width: 5px; height: 420px;"></div>
-<div class="l apps-ranking"><span class="rank-title"><?php echo $a['title']; ?></span>
-<ul>
-<?php if(!empty($a['list'])){foreach($a['list'] as $k => $v ){?>
-	<li>
-	<p class="open" <?php if($k!=0) echo "style='display:none;'" ?>><em
-		class="l"> <span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>" class="rank-img"><img
-		src="<?php echo $v['app_logo'];?>" border="0"
-		alt="<?php echo $v['app_title']; ?>"></a> </em> <span
-		class="r info-and-download"> <a href="<?php echo $v['surl'];?>"
-		class="txt-overflw description"><?php echo $v['app_title']; ?></a> <a
-		href="<?php echo $v['surl']?>" class="dwd">下载</a> </span></p>
-	<p class="close" <?php if($k==0) echo "style='display:none;'" ?>><span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>"
-		class="col-6b txt-overflw description"><?php echo $v['app_title']; ?></a>
-	<span class="col-94 download-num"><?php echo $v['app_down'];?>次</span>
-	</p>
-	</li>
-	<?php } } ?>
-</ul>
-</div>
-<!--最新排行--> <?php $a = $c->get_recommend(array('area_id'=>5,'pagesize'=>10,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3 )'));//print_r($a);?>
-<div class="l" style="width: 5px; height: 420px;"></div>
-<div class="l new-ranking"><span class="rank-title"><?php echo $a['title']; ?></span>
-<ul>
-<?php if(!empty($a['list'])){foreach($a['list'] as $k => $v ){?>
-	<li>
-	<p class="open" <?php if($k!=0) echo "style='display:none;'" ?>><em
-		class="l"> <span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>" class="rank-img"><img
-		src="<?php echo $v['app_logo'];?>" border="0"
-		alt="<?php echo $v['app_title'];?>"></a> </em> <span
-		class="r info-and-download"> <a href="<?php echo $v['surl'];?>"
-		class="txt-overflw description"><?php echo $v['app_title'];?></a> <a
-		href="<?php echo $v['surl']?>" class="dwd">下载</a> </span></p>
-	<p class="close" <?php if($k==0) echo "style='display:none;'" ?>><span
-		class="sort-num sort <?php if($k>2){echo "sort-num-grey";}?>"><?php echo ($k+1);?></span>
-	<a href="<?php echo $v['surl'];?>"
-		class="col-6b txt-overflw description"><?php echo $v['app_title'];?></a>
-	<span class="col-94 download-num"><?php echo $v['app_down'];?>次</span>
-	</p>
-	</li>
-	<?php } } ?>
-</ul>
-</div>
-</div>
-</div>
+
+
 <p class="line-t-10"></p>
 	<?php $a = $c->get_recommend(array('pagesize'=>9,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=4 or area_type=3)'));//print_r($a);?>
 <div class="bor-sty choiceness"><?php foreach($a['list'] as $k => $v){ if($k==0){

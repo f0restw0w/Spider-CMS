@@ -35,6 +35,18 @@ $(function(){
     		$(this).find('dd').next('.play-type').show().next().hide();
     	}
     );
+    //一周推荐
+    $('.bout-content-yizhou li').hover(
+        	function()
+        	{
+        		$(this).addClass('li-hover');
+        		$(this).find('dd').next('.play-type').hide().next().show();
+        	},
+        	function(){
+        		$(this).removeClass('li-hover');
+        		$(this).find('dd').next('.play-type').show().next().hide();
+        	}
+        );
     //排行
     $('ul li','div.ranking').hover(function(){
         $(this).parent('ul').children('li:first').children('p:first').hide().siblings().show();

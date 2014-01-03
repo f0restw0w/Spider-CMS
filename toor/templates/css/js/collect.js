@@ -216,7 +216,8 @@ function collect(p,cate_id,q){
 //数据入库
 //cateid 是在手动添加应用的时候用的
 function into_app(cateid,app_id){
-   if(auth=='') {show_getauth(); return false;}
+	//the next line is hacked
+	//if(auth=='') {show_getauth(); return false;}
     var is_holder=0;
     if(arguments[0]&&cateid!='') is_holder=1;
     var appids=[];
@@ -296,8 +297,8 @@ function blindcate(){
 }
 //手动添加 div show_cate
 function show_cate(app_id){
-    if(auth=='') {show_getauth(); return false;}
-	$("#appid").val(app_id);
+    //if(auth=='') {show_getauth(); return false;}
+	//$("#appid").val(app_id);
     C.alert.opacty({"width":"300","height":"85","div_tag":"#show_cate","title":"选择入库分类"});
 }
 
@@ -325,9 +326,6 @@ function getauth(){
 
             alert(e.message)}
     });
-
-
-
 }
 
 //下拉分类
