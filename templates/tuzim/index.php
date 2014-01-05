@@ -53,31 +53,31 @@
                 $(function () {
                     //对“.NEWTT”选择器的所有元素尽兴function函数处理
                     $("div  .NEWTT").each(function () {
-                        if (newTSelect == null) { 
-                            newTSelect = $(this).attr("id");
-                            $(this).attr("class", "NEWTT Select"); 
-                        	//SetNewTT($(this).attr("id")); 
+                            if (newTSelect == null) { 
+	                            newTSelect = $(this).attr("id");
+    	                        $(this).attr("class", "NEWTT Select"); 
+        	                	SetNewTT($(this).attr("id")); 
                             }
-                        $(this).bind("mouseover", function () {
-                            if (newTSelect == $(this).attr("id")) return;
-                            SetNewTT($(this).attr("id"));
-                            $("#" + newTSelect).attr("class", "NEWTT");
-                            $(this).attr("class", "NEWTT Select"); 
-                            newTSelect = $(this).attr("id");
+            	            $(this).bind("mouseover", function () {
+                	            if (newTSelect == $(this).attr("id")) return;
+                    	        SetNewTT($(this).attr("id"));
+                        	    $("#" + newTSelect).attr("class", "NEWTT");
+                            	$(this).attr("class", "NEWTT Select"); 
+                            	newTSelect = $(this).attr("id");
                         });
                     }
                     );
                 });
                 function SetNewTT(id) {
-                    $("div ." + newTSelect.replace("TT", "T")).css("display", "none");
-                    //$("div ." + id.replace("a", "s")).css("display", "inline");
-					$("div ."+id).css("display","inline");
+                    $("div ." + newTSelect.replace("A", "a")).css("display", "none");
+                    $("div ." + id.replace("A", "a")).css("display", "inline");
+					//$("div ."+id).css("display","inline");
                     }
             </script>
 					<div class="Tabs">
-						<a href="http://www.93yo.com/#" class="NEWTT" id="bout-content">浪漫爱情</a> 
-						<a href="http://www.93yo.com/#" class="NEWTT" id="TT7">欧美潮流</a>
-						<a href="http://www.93yo.com/#" class="NEWTT" id="TT38">另类个性</a> <a
+						<a href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A1">浪漫爱情</a>
+						<a href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">欧美潮流</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT38">另类个性</a> <a
 							href="http://www.93yo.com/#" class="NEWTT" id="TT2">动漫游戏</a> <a
 							href="http://www.93yo.com/#" class="NEWTT" id="TT8">明星美女</a> <a
 							href="http://www.93yo.com/#" class="NEWTT" id="TT4">手绘艺术</a> <a
@@ -91,13 +91,32 @@
 
 
 					<!-- ========================================================================================================================== -->
-					<ul class="bout-content" style="display: none;">
+					<ul class="bout-content-a1" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
 								<dt class="play-img">
 									<a href="<?php echo $v['surl']?>"><img
 										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+					<ul class="bout-content-a2" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="100"
 										border="0" alt="<?php echo $v['app_title']; ?>"></a>
 								</dt>
 								<dd class="play-name"></dd>
@@ -199,7 +218,7 @@ foreach ( $a ['list'] as $b ) {
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-<!-- 主体内容 结束 -->
+		<!-- 主体内容 结束 -->
 
 
 <p class="line-t-10"></p>
