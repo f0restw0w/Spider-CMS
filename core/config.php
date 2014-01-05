@@ -19,8 +19,8 @@ define("SITE_REWRITEURL", "0"); //是否开启伪静态重写 0==不开启，1==
 define("SITE_SAFECODE", "");//后台登录安全码
 define("TEMPLATE", "tuzim");//模板风格
 define("PAGESIZE", "10");//默认每页显示行数
-define("UPLOAD_CODE", "PFpXPZ");//上传安全码，该值安装时候自动生成，6-12位随机字母（大小写）数字，特殊符号
-define("UPLOAD_KEY", "n3hU_n");//上传密钥，该值安装时候自动生成，6-12位随机字母（大小写）数字，特殊符号
+define("UPLOAD_CODE", "yeH4-5");//上传安全码，该值安装时候自动生成，6-12位随机字母（大小写）数字，特殊符号
+define("UPLOAD_KEY", "MPqrIz");//上传密钥，该值安装时候自动生成，6-12位随机字母（大小写）数字，特殊符号
 define("COMMENT_CODE", "");//评论代码
 define("APP_IMG_LOCAL", "0");//添加应用是否图片本地化
 define("CONTENT_NLINK", "0");//是否开启正文内链
