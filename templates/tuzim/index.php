@@ -13,6 +13,9 @@
 		<script language="javascript" type="text/javascript"
 			src="<?php echo SITE_PATH;?>templates/lib/jquery-1.7.1.min.js"></script>
 		<link rel="stylesheet"
+			href="<?php echo SITE_PATH;?>templates/<?php echo TEMPLATE;?>/css/list.css"
+			type="text/css" />
+			<link rel="stylesheet"
 			href="<?php echo SITE_PATH;?>templates/<?php echo TEMPLATE;?>/css/style.css"
 			type="text/css" />
 		<script type="text/javascript"
@@ -38,16 +41,11 @@
 </ul>
 				</div>
 				<p class="line-t-10"></p>
-				<!--精品推荐--> <?php $a = $c->get_recommend(array('area_id'=>2,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3  )'));//print_r($a['list'][0]);?>
 <div class="body-cent-boutique bor-sty bg-fff">
 					<p class="line-t-10"></p>
-					<!-- <span class="title"><em><?php echo $a['title']; ?></em></span> -->
 					<!-- ========================================================================================================================== -->
 					<link rel="shortcut icon" href="http://www.93yo.com/favicon.ico">
 						<link rel="stylesheet" type="text/css" href="/css/Yoo.css">
-							<script src="/css/js/jquery.js" type="text/javascript"></script>
-					
-					
 					<script>
                 var newTSelect = null;
                 $(function () {
@@ -65,33 +63,29 @@
                             	$(this).attr("class", "NEWTT Select"); 
                             	newTSelect = $(this).attr("id");
                         });
-                    }
+                    } 
                     );
                 });
                 function SetNewTT(id) {
                     $("div ." + newTSelect.replace("A", "a")).css("display", "none");
                     $("div ." + id.replace("A", "a")).css("display", "inline");
-					//$("div ."+id).css("display","inline");
                     }
             </script>
 					<div class="Tabs">
-						<a href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A1">浪漫爱情</a>
-						<a href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">欧美潮流</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT38">另类个性</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT2">动漫游戏</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT8">明星美女</a> <a
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=18" class="NEWTT" id="bout-content-A1">精品推荐</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">浪漫爱情</a> <a
+							href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">明星美女</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT2">另类个性</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">明星美女</a> <a
 							href="http://www.93yo.com/#" class="NEWTT" id="TT4">手绘艺术</a> <a
 							href="http://www.93yo.com/#" class="NEWTT" id="TT3">自然风光</a> <a
 							href="http://www.93yo.com/#" class="NEWTT Select" id="TT60">世界名车</a>
 						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">动物宠物</a>
 					</div>
 
-
-
-
-
 					<!-- ========================================================================================================================== -->
 					<ul class="bout-content-a1" style="display: none;">
+<!--精品推荐--><?php $a = $c->get_recommend(array('area_id'=>18,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
@@ -110,13 +104,14 @@
 						</li>
 	<?php } }?>
 </ul>
-					<ul class="bout-content-a2" style="display: none;">
+<!-- 浪漫爱情--><?php $a = $c->get_recommend(array('area_id'=>19,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a2" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
 								<dt class="play-img">
 									<a href="<?php echo $v['surl']?>"><img
-										src="<?php echo $v['app_logo']; ?>" width="216" height="100"
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
 										border="0" alt="<?php echo $v['app_title']; ?>"></a>
 								</dt>
 								<dd class="play-name"></dd>
@@ -129,7 +124,27 @@
 						</li>
 	<?php } }?>
 </ul>
-				</div>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+			</div>
 			</div>
 			<!-- 左侧主体内容  结束 -->
 

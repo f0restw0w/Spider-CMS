@@ -133,7 +133,7 @@ body {
 }
 
 .r {
-	float: right;
+	float: left;
 }
 
 .pr {
@@ -452,6 +452,7 @@ ul.level li.l5 {
 }
 
 .top-head .head-seach {
+	float:right;
 	width: 340px;
 	height: 70px;
 	margin: 30px 84px 0 0;
@@ -562,7 +563,7 @@ ul.level li.l5 {
 	height:1024px;
 	width: 232px;
 	background:RED;
-	margin: 0 98px 0 0;
+	margin: 0 0px 0 17px;
 }
 
 .body-left .body-top-poster {
@@ -633,177 +634,8 @@ ul.level li.l5 {
 .body-cent-boutique span.title a:hover {
 	text-decoration: underline;
 }
-
-.body-cent-boutique ul.bout-content {
-	background: #fff;
-	padding-top: 10px;
-	display: block;
-	/*height: 498px;*/
-	height: auto;
-}
-
-/*主页主题列表个体样式----精品推荐*/
-.body-cent-boutique ul.bout-content li {
-	display: inline-block;
-	float: left;
-	width: 222px;
-	height: 326px;
-	margin: 0 -6px 4px 23px;
-	_margin: 0 -6px 4px 23px;
-	_margin-left: 12px;
-	border: 1px solid #ffffff;
-	border-radius: 8px;
-	display: inline-block;
-}
-
-.body-cent-boutique ul.bout-content li.li-hover {
-	background: #D2E9FF;
-	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
-	border: 1px solid #fff;;
-*/}
-
-.body-cent-boutique ul.bout-content li dl dt {
-	width: 72px;
-	height: 72px;
-	margin: 3px 0px 3px 3px;
-}
-
-/*主题介绍样式----精品推荐*/
-.body-cent-boutique ul.bout-content li dl dd {
-	height: 28px;
-	width: 240px;
-	line-height: 28px;
-	text-align: center;
-	margin: 90px 50px;
-}
-
-/*主题介绍样式 ----精品推荐*/
-.body-cent-boutique ul.bout-content li dl dd.play-download a,.open .info-and-download a.dwd
-	{
-	width: 200px;
-	margin:10px 200px 0px -38px;
-	background: #FCFCFC;
-	color: #3C3C3C;
-	text-align: left;
-	border-radius: 4px;
-	font-weight: bold;
-	line-height: 28px;
-	font-size: 12px;
-}
 /*======================================================================================================================*/
-.body-cent-boutique ul.bout-content-a1 {
-	background: #fff;
-	padding-top: 10px;
-	display: block;
-	/*height: 498px;*/
-	height: auto;
-}
 
-/*主页主题列表个体样式----精品推荐*/
-.body-cent-boutique ul.bout-content-a1 li {
-	display: inline-block;
-	float: left;
-	width: 222px;
-	height: 326px;
-	margin: 0 -6px 4px 23px;
-	_margin: 0 -6px 4px 23px;
-	_margin-left: 12px;
-	border: 1px solid #ffffff;
-	border-radius: 8px;
-	display: inline-block;
-}
-
-.body-cent-boutique ul.bout-content-a1 li.li-hover {
-	background: #D2E9FF;
-	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
-	border: 1px solid #fff;;
-*/}
-
-.body-cent-boutique ul.bout-content-a1 li dl dt {
-	width: 72px;
-	height: 72px;
-	margin: 3px 0px 3px 3px;
-}
-
-/*主题介绍样式----精品推荐*/
-.body-cent-boutique ul.bout-content-a1 li dl dd {
-	height: 28px;
-	width: 240px;
-	line-height: 28px;
-	text-align: center;
-	margin: 90px 50px;
-}
-
-/*主题介绍样式 ----精品推荐*/
-.body-cent-boutique ul.bout-content-a1 li dl dd.play-download a,.open .info-and-download a.dwd
-	{
-	width: 200px;
-	margin:10px 200px 0px -38px;
-	background: #FCFCFC;
-	color: #3C3C3C;
-	text-align: left;
-	border-radius: 4px;
-	font-weight: bold;
-	line-height: 28px;
-	font-size: 12px;
-}
-/*======================================================================================================================*/
-.body-cent-boutique ul.bout-content-a2 {
-	background: #fff;
-	padding-top: 10px;
-	display: block;
-	/*height: 498px;*/
-	height: auto;
-}
-
-/*主页主题列表个体样式----精品推荐*/
-.body-cent-boutique ul.bout-content-a2 li {
-	display: inline-block;
-	float: left;
-	width: 222px;
-	height: 326px;
-	margin: 0 -6px 4px 23px;
-	_margin: 0 -6px 4px 23px;
-	_margin-left: 12px;
-	border: 1px solid #ffffff;
-	border-radius: 8px;
-	display: inline-block;
-}
-
-.body-cent-boutique ul.bout-content-a2 li.li-hover {
-	background: #D2E9FF;
-	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
-	border: 1px solid #fff;;
-*/}
-
-.body-cent-boutique ul.bout-content-a2 li dl dt {
-	width: 72px;
-	height: 72px;
-	margin: 3px 0px 3px 3px;
-}
-
-/*主题介绍样式----精品推荐*/
-.body-cent-boutique ul.bout-content-a2 li dl dd {
-	height: 28px;
-	width: 240px;
-	line-height: 28px;
-	text-align: center;
-	margin: 90px 50px;
-}
-
-/*主题介绍样式 ----精品推荐*/
-.body-cent-boutique ul.bout-content-a2 li dl dd.play-download a,.open .info-and-download a.dwd
-	{
-	width: 200px;
-	margin:10px 200px 0px -38px;
-	background: #FCFCFC;
-	color: #3C3C3C;
-	text-align: left;
-	border-radius: 4px;
-	font-weight: bold;
-	line-height: 28px;
-	font-size: 12px;
-}
 /*======================================================================================================================*/
 /*====================================================一周推荐 Start======================================================*/
 /*主页主题列表个体样式 ----- 一周推荐*/
@@ -1179,6 +1011,7 @@ ul.level li.l5 {
 
 /* 涓讳綋鍐呭 鍟嗗搧绮鹃� */
 .choiceness {
+	width:1010px;
 	background: #fff;
 }
 
@@ -1221,7 +1054,8 @@ ul.level li.l5 {
 }
 
 .choiceness .choice-right {
-	width: 815px;
+	margin-left:30px;
+	width: 700px;
 	height: 306px;
 }
 
@@ -1235,7 +1069,7 @@ ul.level li.l5 {
 }
 
 .choice-right ul li {
-	margin: 10px 0 15px 13px;
+	margin: 10px 0 15px 23px;
 	_margin-left: 10px;
 	display: inline-block;
 	width: 140px;
@@ -1903,6 +1737,7 @@ ul.level li.l5 {
 }
 
 .newlist {
+	width:1010px;
 	border: 1px solid #ddd;
 	margin-top: 10px;
 	background: #f7f7f7;
@@ -1934,7 +1769,7 @@ ul.level li.l5 {
 
 .newlist ul li img {
 	width: 48px;
-	height: 48px;
+	height: 72px;
 	margin: 0 17px;
 }
 

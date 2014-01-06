@@ -27,8 +27,43 @@ $(function() {
 								'dl').length > 0)
 							$(this).children('dl').hide();
 					});
-	// 精品推荐
-	$('.bout-content li').hover(function() {
+	//tableBar
+	$('.bout-content-a1 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a2 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a3 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a4 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a5 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a6 li').hover(function() {
 		$(this).addClass('li-hover');
 		$(this).find('dd').next('.play-type').hide().next().show();
 	}, function() {
