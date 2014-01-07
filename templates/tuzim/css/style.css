@@ -78,18 +78,18 @@ body {
 }
 
 .warp .warp-footer {
-	width: 100%;
+	width: 1010px;
 	clear: both;
 }
 
 .marauto,.warp .warp-content {
-	width: 1100px;
+	width: 1010px;
 	margin: 0 auto;
 }
 
 .marauto1 {
 	width: 900px;
-	margin: 0 auto;
+	margin: 0 auto 0 40px;
 }
 
 .user-information {
@@ -133,6 +133,7 @@ body {
 }
 
 .r {
+	margin-left:250px;
 	float: left;
 }
 
@@ -389,7 +390,7 @@ ul.level li.l5 {
 }
 
 .bor-sty {
-	border: 2px solid #2788CF;
+	/*border: 2px solid #2788CF;*/
 	border-width: 2px 0 1px 0;
 	border-bottom-color: #ccc;
 	overflow: hidden;
@@ -562,7 +563,6 @@ ul.level li.l5 {
 .warp-content .body-right {
 	height:1024px;
 	width: 232px;
-	background:RED;
 	margin: 0 0px 0 17px;
 }
 
@@ -902,7 +902,7 @@ ul.level li.l5 {
 }
 
 .center-warp .the-one {
-	
+
 }
 
 .the-one .cont {
@@ -935,7 +935,6 @@ ul.level li.l5 {
 }
 
 .body-right .center-warp .l-download-bg {
-	background: url(img/index/oneinstall-bg.png) no-repeat;
 	width: 231px;
 	height: 106px;
 	clear: both;
@@ -1204,7 +1203,7 @@ ul.level li.l5 {
 
 .tab-content .app-list a.ico,.app-cnt a img {
 	width: 72px;
-	height: 72px;
+	height: 106px;
 }
 
 .app-cnt {
@@ -1215,7 +1214,7 @@ ul.level li.l5 {
 }
 
 .app-cnt .app-info {
-	width: 400px;
+	width: 340px;
 	float: left;
 	display: inline-block;
 	margin-left: 10px;

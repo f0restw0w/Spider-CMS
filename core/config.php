@@ -15,7 +15,7 @@ define("SITE_NAME", "安卓市场");//站点名称
 define("SITE_URL", "http://www.appcms.cc");//站点域名
 define("SITE_LOGO", "/upload/logo.png");//站点LOGO
 define("UPLOAD_PATH", "/img/");//资源上传路径,相对于upload
-define("SITE_REWRITEURL", "0"); //是否开启伪静态重写 0==不开启，1==开启
+define("SITE_REWRITEURL", "1"); //是否开启伪静态重写 0==不开启，1==开启
 define("SITE_SAFECODE", "");//后台登录安全码
 define("TEMPLATE", "tuzim");//模板风格
 define("PAGESIZE", "10");//默认每页显示行数

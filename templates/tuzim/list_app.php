@@ -43,7 +43,7 @@
                         <div class="app-list boutique-cnt">
                         <?php if(!empty($lists['list'])){foreach($lists['list'] as $key=> $val){?>
                           <div class="app-cnt">     
-                            <a href="<?php echo $val['surl']; ?>" class="l app-ico"><img src="<?php echo $val['app_logo']; ?>" border="0" alt="<?php echo $val['app_title']; ?>"></a>
+                            <a href="<?php echo $val['surl']; ?>" class="l app-ico"><img src="<?php echo $val['app_logo']; ?>"border="0" alt="<?php echo $val['app_title']; ?>" ></a>
                             <div class="app-info">
                                 <div style="width:100%;">
                                     <a class="app-title" href="<?php echo $val['surl']; ?>"><?php echo $val['app_title']; ?></a>

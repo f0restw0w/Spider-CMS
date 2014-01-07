@@ -148,13 +148,13 @@
 			</div>
 			<!-- 左侧主体内容  结束 -->
 
-
+	<!-- 右侧主体内容 -->
 			<div class="r body-right">
-				<!-- 右侧主体内容 -->
 				<!--每日推荐-->
 				<div class="center-warp">
 					<div class="the-one">
 						<div class="bor-sty cont">
+							<div style="height:120px; overflow:hidden;margin-top:-5px"><img src="templates/tuzim/css/img/index_right/a3.gif"></div>
 							<p class="line-t-6"></p>
 	<?php $a = $c->get_recommend(array('area_id'=>2,'pagesize'=>6,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3  )'));//print_r($a['list'][0]);?>
 <div class="body-cent-boutique bor-sty bg-fff">
@@ -184,57 +184,6 @@
 				</div>
 			</div>
 			<!-- 右侧主体内容  结束 -->
-
-
-			<p class="line-t-10"></p>
-	<?php $a = $c->get_recommend(array('pagesize'=>9,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=4 or area_type=3)'));//print_r($a);?>
-<div class="bor-sty choiceness"><?php
-
-foreach ( $a ['list'] as $k => $v ) {
-	if ($k == 0) {
-		if (empty ( $v ['area_logo'] )) {
-			$v ['area_logo'] = SITE_PATH . "templates/" . TEMPLATE . "/css/img/default.jpg";
-		}
-		?>
-<div class="l choice-left">
-					<span class="title">专题精选</span>
-					<div class="p-img">
-						<a href="<?php echo $v['surl'];?>"><img
-							src="<?php echo $v['area_logo'];?>" class="p-img" /></a>
-					</div>
-					<a class="c-name" href="<?php echo $v['surl'];?>"><?php echo $v['title'];?></a><br />
-					<span class="c-info"><?php echo $v['area_html'];?></span>
-				</div>
-				<div class="r choice-right">
-					<a class="more"
-						href="<?php echo $c->url->encode('special_list', array('host' => '/','p' => 1));?>">更多>></a>
-					<ul>
-<?php }else{?>
-	<!--专题精选-->
-						<li><a href="<?php echo $v['surl'];?>" class="r-img"><img
-								src="<?php echo $v['area_logo'];?>" border="0"
-								alt="<?php echo $v['title'];?>"></a> <a class="p-name"
-							href="<?php echo $v['surl'];?>"><?php echo $v['title'];?></a></li>
-		<?php } }?>
-
-</ul>
-				</div>
-			</div>
-		<?php $a = $c->get_list(array('fields'=>'app_title,app_logo,app_id,last_cate_id','pagesize'=>100,'rewrite'=>SITE_REWRITEURL,'count'=>0));?>
-<div class="newlist">
-				<div class="title">最近更新</div>
-				<ul>
-<?php
-foreach ( $a ['list'] as $b ) {
-	echo ('<li><a href="' . $b ['surl'] . '" title=' . $b ['app_title'] . '><img src="' . $b ['app_logo'] . '" alt=' . $b ['app_title'] . '></a></li>');
-}
-?>
-</ul>
-				<div style="clear: both;"></div>
-			</div>
-		</div>
-		<!-- 主体内容 结束 -->
-
 
 <p class="line-t-10"></p>
 

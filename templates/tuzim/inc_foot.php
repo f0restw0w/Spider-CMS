@@ -14,9 +14,10 @@
             <p class="line-t-15"></p>
             <!-- 版权标识开始 -->
             <!-- 如果取消了版权标识，AppCMS有权取消您的使用授权 -->
-            <div class="l">Powered by <a href="http://www.appcms.cc/" target="_blank" >AppCMS</a> &copy; 2013&nbsp;&nbsp;&nbsp;&nbsp;<?php echo "<a href='".DATA_CENTER_URL."/appsubmit.php' target='_blank' >提交应用</a>";?></div>
+            <div class="l">&nbsp;&nbsp;&nbsp;&nbsp;Powered by <a href="" target="_blank" >深圳南山科技园 A-TEAM Studio</a> &copy; 2010-2013&nbsp;&nbsp;&nbsp;&nbsp;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  申明：本站所有手机主题均由网站自由上传或由部份合作提供，如果有哪款手机主题下载包侵犯您版权，请联系我们网站邮箱，我们在24小时由删除！</div>
     <!-- 版权标识结束 -->
-            <div class="r"><?php echo('Processed in '.number_format(helper::getmicrotime()-$time_start, 2, '.', '').' MilliSeconds ');?>&nbsp;&nbsp;<?php if(defined('COUNT_CODE')) echo(COUNT_CODE); ?></div>
+            <div class="r">邮箱：themeshow@126.com &nbsp;&nbsp;&nbsp;&nbsp;<?php echo('Processed in '.number_format(helper::getmicrotime()-$time_start, 2, '.', '').' MilliSeconds ');?>&nbsp;&nbsp;<?php if(defined('COUNT_CODE')) echo(COUNT_CODE); ?></div>
             <p class="line-t-25"></p>
         </span>
       </div>    
