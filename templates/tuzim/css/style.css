@@ -13,14 +13,14 @@ body {
 }
 
 a {
-	color: #000;
+	color: #12697c;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
 }
 
 a:hover {
-	color: #3468F1;
+	color: #fff;
 	text-decoration: none
 }
 
@@ -634,9 +634,36 @@ ul.level li.l5 {
 .body-cent-boutique span.title a:hover {
 	text-decoration: underline;
 }
-/*======================================================================================================================*/
-
-/*======================================================================================================================*/
+.Tabs
+{
+	margin-left: 11px;	
+	margin-bottom: 5px;
+}
+.Tabs a{
+	color:#12697c;
+	background-color: #fff;
+}
+.Tabs a:HOVER{
+	background-color: #12697c;
+	color:#fff;
+}
+.NEWTT 
+{
+	width:64px;
+	margin-left:5px;
+	height:22px;
+	font-size:14px;
+	color:red;
+}
+.Tabs a.NEWTTSelect
+{
+	width:64px;
+	height:22px;
+	margin-left:5px;
+	font-size:14px;
+	background-color: #12697c;
+	color:#fff;
+}
 /*====================================================一周推荐 Start======================================================*/
 /*主页主题列表个体样式 ----- 一周推荐*/
 .body-cent-boutique ul.bout-content-yizhou li {
@@ -697,19 +724,7 @@ ul.level li.l5 {
 	{ /*background: url(img/index/css.gif) left -1375px;*/
 	
 }
-/*====================================================一周推荐 End======================================================*/
-
-
-
-
-
-
-
-
-
-
-
-
+/*====================================================今日推荐 End======================================================*/
 
 .body-left .poster-slide {
 	width: 720px;

@@ -50,19 +50,21 @@
                 var newTSelect = null;
                 $(function () {
                     //对“.NEWTT”选择器的所有元素尽兴function函数处理
-                    $("div  .NEWTT").each(function () {
-                            if (newTSelect == null) { 
+                    $("div  .NEWTT").each(function () 
+                            {
+                            	if (newTSelect == null) { 
 	                            newTSelect = $(this).attr("id");
-    	                        $(this).attr("class", "NEWTT Select"); 
+    	                        $(this).attr("class", "NEWTTSelect"); 
         	                	SetNewTT($(this).attr("id")); 
                             }
             	            $(this).bind("mouseover", function () {
                 	            if (newTSelect == $(this).attr("id")) return;
                     	        SetNewTT($(this).attr("id"));
                         	    $("#" + newTSelect).attr("class", "NEWTT");
-                            	$(this).attr("class", "NEWTT Select"); 
+                            	$(this).attr("class", "NEWTTSelect"); 
                             	newTSelect = $(this).attr("id");
-                        });
+                        		}
+                            );
                     } 
                     );
                 });
@@ -72,15 +74,16 @@
                     }
             </script>
 					<div class="Tabs">
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=18" class="NEWTT" id="bout-content-A1">精品推荐</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">浪漫爱情</a> <a
-							href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">明星美女</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT2">另类个性</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">明星美女</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT4">手绘艺术</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT3">自然风光</a> <a
-							href="http://www.93yo.com/#" class="NEWTT Select" id="TT60">世界名车</a>
-						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">动物宠物</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=18" class="NEWTT" id="bout-content-A1">&nbsp精品推荐</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">&nbsp浪漫爱情</a> <a
+							href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">&nbsp明星美女</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT2">&nbsp另类个性</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">&nbsp明星美女</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT4">&nbsp手绘艺术</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT3">&nbsp自然风光</a> <a
+							href="http://www.93yo.com/#" class="NEWTT" id="TT60">&nbsp世界名车</a>
+						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">&nbsp动物宠物</a>
+						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">&nbsp梦幻科技</a>
 					</div>
 
 					<!-- ========================================================================================================================== -->
