@@ -75,15 +75,15 @@
             </script>
 					<div class="Tabs">
 						<a href="http://127.0.0.1/index.php?tpl=special_content&id=18" class="NEWTT" id="bout-content-A1">&nbsp精品推荐</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">&nbsp浪漫爱情</a> <a
-							href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">&nbsp明星美女</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT2">&nbsp另类个性</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="bout-content-A2">&nbsp明星美女</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT4">&nbsp手绘艺术</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT3">&nbsp自然风光</a> <a
-							href="http://www.93yo.com/#" class="NEWTT" id="TT60">&nbsp世界名车</a>
-						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">&nbsp动物宠物</a>
-						<a href="http://www.93yo.com/#" class="NEWTT" id="TT6">&nbsp梦幻科技</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">&nbsp浪漫爱情</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=21" class="NEWTT" id="bout-content-A4">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=22" class="NEWTT" id="bout-content-A5">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=23" class="NEWTT" id="bout-content-A6">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=24" class="NEWTT" id="bout-content-A7">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=25" class="NEWTT" id="bout-content-A8">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=26" class="NEWTT" id="bout-content-A9">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=27" class="NEWTT" id="bout-content-A10">&nbsp明星美女</a>
 					</div>
 
 					<!-- ========================================================================================================================== -->

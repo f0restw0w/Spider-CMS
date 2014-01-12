@@ -34,13 +34,14 @@
                         <p>推荐用 <a href="<?php echo(SITE_PATH.'index.php?tpl=search&q='.urlencode('我查查'));?>" style="color:blue">我查查</a> 扫描</p>
                     </div>
                     <div class="app-info-i">
-                        <a href="<?php echo $con['surl']?>" class="l rank-img"><img src="<?php echo $con['app_logo']?>" border="0" alt=""></a>
+                        <a href="<?php echo $con['surl']?>" class="l rank-img"><img src="<?php echo $con['app_logo']?>" border="0" alt="" ></a>
                         <div class="app-info-n">
-                            <a class="app-title" href="<?php echo $con['surl'];?>"><b><?php echo $con['app_title'];?></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="col-94 download-num">下载： <?php echo $con['app_down'];?></span>&nbsp;&nbsp;<span class="col-94 download-num">点击： <?php echo $con['app_visitors'];?></span>
+                            <a class="app-title" href="<?php echo $con['surl'];?>"><b><?php echo $con['app_title'];?></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="col-94 download-num">下载：<span style="color:#46A3FF"> <?php echo $con['app_down'];?></span></span>&nbsp;&nbsp;<span class="col-94 download-num">点击： <?php echo $con['app_visitors'];?></span>
                             <ul class="level"><li class="l<?php echo ceil($con['app_recomment']/2);?>"></li></ul>
                         </div>
                         <br /><br />
                         <div class="detailed-info">
+                            <span style="color: #12697c;font-size: 16px">应用名称：<?php echo $con['app_title'];?></span>
                             <span>大小：<?php echo $con['app_size'];?></span>
                             <span>更新日期：<?php echo date("Y-m-d",$con['app_update_time']);?></span>
                             <span>类型：<?php echo $con['app_type'];?></span>

@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-	color: #fff;
+	color: #12697c;
 	text-decoration: none
 }
 
@@ -456,7 +456,7 @@ ul.level li.l5 {
 	float:right;
 	width: 340px;
 	height: 70px;
-	margin: 30px 84px 0 0;
+	margin: 30px -5px 0 0;
 }
 
 .top-head .head-seach .bdr-span {
@@ -1327,17 +1327,18 @@ ul.level li.l5 {
 }
 
 .app-info .app-info-i {
-	padding: 28px 0 18px 18px;
+	padding: 28px 0 0px 18px;
 	display: inline-block;
 	width: 490px;
 }
 
 .app-info .app-info-i .rank-img img {
-	width: 64px;
-	height: 64px;
+	width: 150px;
+	height: 220px;
 }
 
 .app-info .app-info-i .app-info-n {
+	font-size:14px;
 	margin-left: 15px;
 	height: 50px;
 	display: inline-block;
@@ -1348,6 +1349,7 @@ ul.level li.l5 {
 }
 
 .app-info .app-info-i .app-info-n b {
+	font-size:14px;
 	font-weight: bold;
 }
 
@@ -1355,9 +1357,12 @@ ul.level li.l5 {
 	display: block;
 	margin-top: 15px;
 }
-
+.detailed-info{
+	margin-top: -35px;
+}
 .app-info-i .detailed-info span {
-	padding: 5px 50px 5px 0;
+	font-size:14px;
+	padding: 10px 50px 5px 60px;
 	display: inline-block;
 }
 
