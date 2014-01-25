@@ -133,7 +133,7 @@ body {
 }
 
 .r {
-	margin-left:250px;
+	margin-left:80px;
 	float: left;
 }
 
@@ -1671,6 +1671,7 @@ ul.level li.l5 {
 	width: 350px;
 	line-height: 22px;
 }
+
 
 .topics .tpc-info .tn {
 	height: 40px;
