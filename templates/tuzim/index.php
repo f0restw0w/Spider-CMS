@@ -75,15 +75,15 @@
             </script>
 					<div class="Tabs">
 						<a href="http://127.0.0.1/index.php?tpl=special_content&id=18" class="NEWTT" id="bout-content-A1">&nbsp精品推荐</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">&nbsp浪漫爱情</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=19" class="NEWTT" id="bout-content-A2">&nbsp舞动青春</a>
 						<a href="http://127.0.0.1/index.php?tpl=special_content&id=20" class="NEWTT" id="bout-content-A3">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=21" class="NEWTT" id="bout-content-A4">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=22" class="NEWTT" id="bout-content-A5">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=23" class="NEWTT" id="bout-content-A6">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=24" class="NEWTT" id="bout-content-A7">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=25" class="NEWTT" id="bout-content-A8">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=26" class="NEWTT" id="bout-content-A9">&nbsp明星美女</a>
-						<a href="http://127.0.0.1/index.php?tpl=special_content&id=27" class="NEWTT" id="bout-content-A10">&nbsp明星美女</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=21" class="NEWTT" id="bout-content-A4">&nbsp浪漫爱情</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=22" class="NEWTT" id="bout-content-A5">&nbsp欧美潮流</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=23" class="NEWTT" id="bout-content-A6">&nbsp时尚韩国</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=24" class="NEWTT" id="bout-content-A7">&nbsp简洁商务</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=25" class="NEWTT" id="bout-content-A8">&nbsp自然风光</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=26" class="NEWTT" id="bout-content-A9">&nbsp游戏动漫</a>
+						<a href="http://127.0.0.1/index.php?tpl=special_content&id=27" class="NEWTT" id="bout-content-A10">&nbsp世界名车</a>
 					</div>
 
 					<!-- ========================================================================================================================== -->
@@ -109,6 +109,106 @@
 </ul>
 <!-- 浪漫爱情--><?php $a = $c->get_recommend(array('area_id'=>19,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
 <ul class="bout-content-a2" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a3" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
