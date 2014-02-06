@@ -286,3 +286,298 @@
 	line-height: 28px;
 	font-size: 12px;
 }
+/*======================================================================================================================*/
+
+
+.body-cent-boutique ul.bout-content-a6 {
+	background: #fff;
+	padding-top: 10px;
+	display: block;
+	/*height: 498px;*/
+	height: auto;
+}
+
+/*主页主题列表个体样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a6 li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.body-cent-boutique ul.bout-content-a6 li.li-hover {
+	background: #D2E9FF;
+	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
+	border: 1px solid #fff;;
+*/}
+
+.body-cent-boutique ul.bout-content-a6 li dl dt {
+	width: 72px;
+	height: 72px;
+	margin: 3px 0px 3px 3px;
+}
+
+/*主题介绍样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a6 li dl dd {
+	height: 28px;
+	width: 240px;
+	line-height: 28px;
+	text-align: center;
+	margin: 90px 50px;
+}
+
+/*主题介绍样式 ----精品推荐*/
+.body-cent-boutique ul.bout-content-a6 li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*======================================================================================================================*/
+
+
+.body-cent-boutique ul.bout-content-a7 {
+	background: #fff;
+	padding-top: 10px;
+	display: block;
+	/*height: 498px;*/
+	height: auto;
+}
+
+/*主页主题列表个体样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a7 li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.body-cent-boutique ul.bout-content-a7 li.li-hover {
+	background: #D2E9FF;
+	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
+	border: 1px solid #fff;;
+*/}
+
+.body-cent-boutique ul.bout-content-a7 li dl dt {
+	width: 72px;
+	height: 72px;
+	margin: 3px 0px 3px 3px;
+}
+
+/*主题介绍样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a7 li dl dd {
+	height: 28px;
+	width: 240px;
+	line-height: 28px;
+	text-align: center;
+	margin: 90px 50px;
+}
+
+/*主题介绍样式 ----精品推荐*/
+.body-cent-boutique ul.bout-content-a7 li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*======================================================================================================================*/
+
+
+.body-cent-boutique ul.bout-content-a8 {
+	background: #fff;
+	padding-top: 10px;
+	display: block;
+	/*height: 498px;*/
+	height: auto;
+}
+
+/*主页主题列表个体样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a8 li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.body-cent-boutique ul.bout-content-a8 li.li-hover {
+	background: #D2E9FF;
+	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
+	border: 1px solid #fff;;
+*/}
+
+.body-cent-boutique ul.bout-content-a8 li dl dt {
+	width: 72px;
+	height: 72px;
+	margin: 3px 0px 3px 3px;
+}
+
+/*主题介绍样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a8 li dl dd {
+	height: 28px;
+	width: 240px;
+	line-height: 28px;
+	text-align: center;
+	margin: 90px 50px;
+}
+
+/*主题介绍样式 ----精品推荐*/
+.body-cent-boutique ul.bout-content-a8 li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*======================================================================================================================*/
+
+
+.body-cent-boutique ul.bout-content-a9 {
+	background: #fff;
+	padding-top: 10px;
+	display: block;
+	/*height: 498px;*/
+	height: auto;
+}
+
+/*主页主题列表个体样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a9 li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.body-cent-boutique ul.bout-content-a9 li.li-hover {
+	background: #D2E9FF;
+	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
+	border: 1px solid #fff;;
+*/}
+
+.body-cent-boutique ul.bout-content-a9 li dl dt {
+	width: 72px;
+	height: 72px;
+	margin: 3px 0px 3px 3px;
+}
+
+/*主题介绍样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a9 li dl dd {
+	height: 28px;
+	width: 240px;
+	line-height: 28px;
+	text-align: center;
+	margin: 90px 50px;
+}
+
+/*主题介绍样式 ----精品推荐*/
+.body-cent-boutique ul.bout-content-a9 li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}
+/*======================================================================================================================*/
+
+
+.body-cent-boutique ul.bout-content-a10 {
+	background: #fff;
+	padding-top: 10px;
+	display: block;
+	/*height: 498px;*/
+	height: auto;
+}
+
+/*主页主题列表个体样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a10 li {
+	display: inline-block;
+	float: left;
+	width: 222px;
+	height: 326px;
+	margin: 0 -6px 4px 23px;
+	_margin: 0 -6px 4px 23px;
+	_margin-left: 12px;
+	border: 1px solid #ffffff;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+.body-cent-boutique ul.bout-content-a10 li.li-hover {
+	background: #D2E9FF;
+	/*background: url(img/index/css-img.png) -265px -451px no-repeat;
+	border: 1px solid #fff;;
+*/}
+
+.body-cent-boutique ul.bout-content-a10 li dl dt {
+	width: 72px;
+	height: 72px;
+	margin: 3px 0px 3px 3px;
+}
+
+/*主题介绍样式----精品推荐*/
+.body-cent-boutique ul.bout-content-a10 li dl dd {
+	height: 28px;
+	width: 240px;
+	line-height: 28px;
+	text-align: center;
+	margin: 90px 50px;
+}
+
+/*主题介绍样式 ----精品推荐*/
+.body-cent-boutique ul.bout-content-a10 li dl dd.play-download a,.open .info-and-download a.dwd
+	{
+	width: 200px;
+	margin:10px 200px 0px -38px;
+	background: #FCFCFC;
+	color: #3C3C3C;
+	text-align: left;
+	border-radius: 4px;
+	font-weight: bold;
+	line-height: 28px;
+	font-size: 12px;
+}

@@ -70,6 +70,34 @@ $(function() {
 		$(this).removeClass('li-hover');
 		$(this).find('dd').next('.play-type').show().next().hide();
 	});
+	$('.bout-content-a7 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a8 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a9 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
+	$('.bout-content-a10 li').hover(function() {
+		$(this).addClass('li-hover');
+		$(this).find('dd').next('.play-type').hide().next().show();
+	}, function() {
+		$(this).removeClass('li-hover');
+		$(this).find('dd').next('.play-type').show().next().hide();
+	});
 	// 一周推荐
 	$('.bout-content-yizhou li').hover(function() {
 		$(this).addClass('li-hover');

@@ -107,7 +107,7 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 浪漫爱情--><?php $a = $c->get_recommend(array('area_id'=>19,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<!-- 舞动青春--><?php $a = $c->get_recommend(array('area_id'=>19,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
 <ul class="bout-content-a2" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
@@ -147,8 +147,8 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
-<ul class="bout-content-a3" style="display: none;">
+<!-- 浪漫爱情--><?php $a = $c->get_recommend(array('area_id'=>21,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a4" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
@@ -167,8 +167,8 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
-<ul class="bout-content-a3" style="display: none;">
+<!-- 欧美潮流--><?php $a = $c->get_recommend(array('area_id'=>22,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a5" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
@@ -187,8 +187,8 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
-<ul class="bout-content-a3" style="display: none;">
+<!-- 时尚韩国--><?php $a = $c->get_recommend(array('area_id'=>22,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a6" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
@@ -207,8 +207,8 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
-<ul class="bout-content-a3" style="display: none;">
+<!-- 简洁商务--><?php $a = $c->get_recommend(array('area_id'=>23,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a7" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
@@ -227,8 +227,48 @@
 						</li>
 	<?php } }?>
 </ul>
-<!-- 明星美女--><?php $a = $c->get_recommend(array('area_id'=>20,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
-<ul class="bout-content-a3" style="display: none;">
+<!-- 自然唯美--><?php $a = $c->get_recommend(array('area_id'=>24,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a8" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 游戏动漫--><?php $a = $c->get_recommend(array('area_id'=>25,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a9" style="display: none;">
+<?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
+	<li>
+							<dl>
+								<dt class="play-img">
+									<a href="<?php echo $v['surl']?>"><img
+										src="<?php echo $v['app_logo']; ?>" width="216" height="320"
+										border="0" alt="<?php echo $v['app_title']; ?>"></a>
+								</dt>
+								<dd class="play-name"></dd>
+								<dd class="play-type"></dd>
+								<dd class="play-download" style="display: none;">
+									<a href="<?php echo $v['surl']?>">&nbsp&nbsp&nbsp&nbsp&nbsp<?php echo $v['app_title']; ?>&nbsp&nbsp&nbsp&nbsp&nbsp下载：<font
+										color="#005AB5"><?php echo $v['app_down'];?>&nbsp次</font></a>
+								</dd>
+							</dl>
+						</li>
+	<?php } }?>
+</ul>
+<!-- 世界名车--><?php $a = $c->get_recommend(array('area_id'=>26,'pagesize'=>18,'count'=>0,'rewrite'=>SITE_REWRITEURL,'where'=>'(area_type=3)'));?>
+<ul class="bout-content-a10" style="display: none;">
 <?php if(!empty($a['list'])){ foreach($a['list'] as $k => $v){?>
 	<li>
 							<dl>
